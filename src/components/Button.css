@@ -9,6 +9,7 @@
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    background-color: #25ce4a;
   }
   
   .btn--primary {
@@ -78,7 +79,7 @@
   }
   
   .blue {
-    background-color: #276afb;
+    background-color: #30ae49;
     color: #fff;
     border: none;
   }

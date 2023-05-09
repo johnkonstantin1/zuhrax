@@ -5,7 +5,9 @@ import Footer from "../../components/footer/Footer";
 import { SlChemistry } from "react-icons/sl";
 import IMAGES from "../../assets";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Uses = () => {
+  const { t } = useTranslation(["uses"])
   return (
     <>
       <Navbar />
@@ -16,7 +18,7 @@ const Uses = () => {
             <div className="des">
               
               <Link to="/uses1">
-              <h5 className="h5-pr">Aversive bittering agent</h5>
+              <h5 className="h5-pr">{t("1")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>
@@ -35,7 +37,7 @@ const Uses = () => {
             <div className="des">
               
               <Link to="/uses2">
-              <h5 className="h5-pr">Denaturing agent</h5>
+              <h5 className="h5-pr">{t("2")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>
@@ -53,8 +55,8 @@ const Uses = () => {
             <img src={IMAGES.uses} className="product-image" />
             <div className="des">
               
-              <Link to="/product5">
-              <h5 className="h5-pr">Solvent</h5>
+              <Link to="/uses3">
+              <h5 className="h5-pr">{t("3")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>

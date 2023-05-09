@@ -1,6 +1,6 @@
 
 #prodetails{
-    background-image: url(../../../public/herobg.jpg);
+    background-image: url(../../../public/blackbg.jpg);
 }
 
 #prodetails .single-pro-image{
@@ -13,9 +13,13 @@
     display: flex;
     margin-top: 0;
     display: flex;
-
+    padding-bottom: 5px;
 }
 
+.uls{
+    list-style-type: disc;
+    padding-left: 5%;
+}
 
 #prodetails .single-pro-details{
     width: 50%;
@@ -24,6 +28,8 @@
     color: aliceblue;
 
 }
+
+
 
 #prodetails .single-pro-details .h4-single {
     padding: 10px 0px 10px 0;

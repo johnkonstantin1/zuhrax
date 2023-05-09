@@ -5,7 +5,9 @@ import Footer from "../../components/footer/Footer";
 import { SlChemistry } from "react-icons/sl";
 import IMAGES from "../../assets";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Services = () => {
+  const { t } = useTranslation(["services"])
   return (
     <>
       <Navbar />
@@ -16,7 +18,7 @@ const Services = () => {
             <div className="des">
               
               <Link to="/service1">
-              <h5 className="h5-pr">Packaging</h5>
+              <h5 className="h5-pr">{t("titlehname")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>
@@ -35,7 +37,7 @@ const Services = () => {
             <div className="des">
               
               <Link to="/services2">
-              <h5 className="h5-pr">Blending</h5>
+              <h5 className="h5-pr">{t("titlehname2")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>
@@ -54,7 +56,7 @@ const Services = () => {
             <div className="des">
               
               <Link to="/service3">
-              <h5 className="h5-pr">Technical advice</h5>
+              <h5 className="h5-pr">{t("titlehname3")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>
@@ -73,7 +75,7 @@ const Services = () => {
             <div className="des">
               
               <Link to="/service4">
-              <h5 className="h5-pr">Quality Control</h5>
+              <h5 className="h5-pr">{t("titlehname4")}</h5>
               </Link>
               <div className="star">
                 <i className="fa fa-star"></i>

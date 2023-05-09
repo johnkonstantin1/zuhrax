@@ -3,8 +3,9 @@ import "./Product.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Product7 = () => {
+  const { t } = useTranslation(["products"]);
   return (
     <>
     <Navbar/>
@@ -13,17 +14,17 @@ const Product7 = () => {
           <img src={IMAGES.img7} className=".single-pro-image"  style={{ width: '50%', margin: '0 28%', borderRadius: '20px'}}/>
         </div>
         <div className="single-pro-details">
-          <h3>Diethyl Phthalate (DEP)</h3>
-          <h4 className="h4-single">Synonyms:</h4>
-          <ul className="h4-single"><li>DEP</li> <li>Ethyl phthalate</li><li>Diethyl ester of phthalic acid</li></ul>
-          <h4 className="h4-single">References:</h4>
-          <ul className="h4-single"><li>CAS n° 84-66-2</li> <li>EINECS n° 201-550-6</li></ul>
-          <h4 className="h4-single">Appearance:</h4>
-          <ul className="h4-single"><li>colourless, oily liquid</li></ul>
-          <h4 className="h4-single">Packaging:</h4>
-          <ul className="h4-single"><li>drums</li> <li>IBC's</li> <li>bulk</li></ul>
-          <h4 className="h4-single">Main characteristics:</h4>
-          <ul className="h4-single"><li>Denaturing agent, solvent</li> <li>Slight aromatic odour </li></ul>
+          <h3>{t("p7h31")}</h3>
+          <h4 className="h4-single">{t("p5h31")}</h4>
+          <ul className="uls"><li>{t("p7ul1")}</li> <li>{t("p7ul2")}</li></ul>
+          <h4 className="h4-single">{t("p3h33")}</h4>
+          <ul className="uls"><li>{t("p3ul4")}</li> <li>{t("p3ul5")}</li></ul>
+          <h4 className="h4-single">{t("p3h34")}</h4>
+          <ul className="uls"><li>{t("p5ul3")}</li></ul>
+          <h4 className="h4-single">{t("p3h36")}</h4>
+          <ul className="uls"><li>{t("p3ul6")}</li> <li>{t("p3ul7")}</li> <li>{t("p3ul8")}</li></ul>
+          <h4 className="h4-single">{t("p3h37")}</h4>
+          <ul className="uls"><li>{t("p5h44")}</li> <li>{t("p7h3")} </li></ul>
           </div>
       </section>
       <Footer />

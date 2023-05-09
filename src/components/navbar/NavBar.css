@@ -81,6 +81,24 @@
 
 }
 
+select {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #dde7de;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  select option:first-child {
+    font-weight: bold;
+  }
+  
+  select option:last-child {
+    color: #888;
+  }
+  
 
 
 

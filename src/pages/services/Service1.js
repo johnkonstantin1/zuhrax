@@ -3,12 +3,17 @@ import "./Service.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Service1 = () => {
+  const { t } = useTranslation(["services"])
   return (
     <>
       <Navbar />
-      <section id="prodetails" className="section-p1" style={{paddingBottom: '10%'}}>
+      <section
+        id="prodetails"
+        className="section-p1"
+        style={{ paddingBottom: "10%" }}
+      >
         <div className="single-pro-image">
           <img
             src={IMAGES.uses}
@@ -17,38 +22,36 @@ const Service1 = () => {
           />
         </div>
         <div className="single-pro-details">
-          <h3>Packaging</h3>
-          <span>
-            We supply our customers with a large scale of packaging from 1 L
-            bottles to 1000 L containers.
-            <br /> If the existing packaging doesn’t meet your request, we can
-            adapt it to your requirements.
+          <h3>{t("titlehname")}</h3>
+          <span style={{ color: "white" }}>
+          {t("s1span1")}
           </span>
           <h4 className="h4-single">
-            Proposed sizes and types of packaging(liquids):
+          {t("s1h4")}
           </h4>
-          <span>
-            bottles of 1 L<br /> plastic drums 5 L 20 L 30 L 100 L<br /> metal
-            drum 200 L<br />
-            IBC of 1000 L<br /> bulk
+          <span style={{ color: "white" }}>
+            <ul className="uls">
+              <li>{t("s1ul1")}</li>
+              <li>{t("s1ul2")}</li>
+              <li>{t("s1ul3")}</li>
+              <li>{t("s1ul4")}</li>
+              <li>{t("s1ul5")}</li>
+            </ul>
           </span>
           <h4 className="h4-single">
-            Proposed sizes and types of packaging(solids):
+          {t("s1he")}
           </h4>
-          <span>
-            100 g bags
-            <br />
-            300 g bags
-            <br />
-            1 kg bags
-            <br />
-            5 kg bags
-            <br />
-            10 kg bags
-            <br />
-            The packaging can always be adapted on request.
+          <span style={{ color: "white" }}>
+            <ul className="uls">
+              <li>{t("s1ul6")}</li>
+              <li>{t("s1ul7")}</li>
+              <li>{t("s1ul8")}</li>
+              <li>{t("s1ul9")}</li>
+              <li>{t("s1ul10")}</li>
+              <li>{t("s1ul10")}</li>
+            </ul>            
           </span>
-          <h4 className="h4-single">Don’t hesitate to contact us.</h4>
+          <h4 className="h4-single">{t("scont")}</h4>
         </div>
       </section>
       <Footer />

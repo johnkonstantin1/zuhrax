@@ -3,8 +3,9 @@ import "./Service.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Service4 = () => {
+  const { t } = useTranslation(["services"])
   return (
     <>
       <Navbar />
@@ -17,14 +18,11 @@ const Service4 = () => {
           />
         </div>
         <div className="single-pro-details">
-          <h3>Quality control</h3>
-          <span>
-          <strong>SENTINALCO is certified ISO 9001 & 14001.</strong><br/>
-          The company has always been quality-driven and this allows us to integrate and fulfill our customer's quality procedures.<br/>
-          For each order, we provide you with a certificate of analysis. These analysis are performed by our in-house laboratory or in cooperation with external partners such as SGS or Intertek. <br/>
-          We have established tracking procedures for all incoming and outgoing deliveries and we keep records for a period of two years.<br/> 
-          </span>
-          <h4 className="h4-single">Don’t hesitate to contact us.</h4>
+          <h2>{t("s4h2")}</h2>
+          <p style={{ color: "white", paddingTop: '10px' }}>
+          {t("s4p1")}
+          </p>
+          <h4 className="h4-single">{t("scont")}</h4>
         </div>
       </section>
       <Footer />

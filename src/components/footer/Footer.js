@@ -50,16 +50,10 @@ const Footer = () => {
                         <p>Contact</p>
                     </div>
                     <form>
-                        <h3>Join Our Team</h3>
+                        <h3>Contact us</h3>
                         <input type="email" placeholder='Enter your email' />
                         <FiMail className='mail-icon' />
-                        <div className="social-group">
-                            <FiInstagram className='social-icon' />
-                            <FiFacebook className='social-icon' />
-                            <FiLinkedin className='social-icon' />
-                            <FiDribbble className='social-icon' />
-                            <FiGithub className='social-icon' />
-                        </div>
+                        
                     </form>
                 </div>
             </div>

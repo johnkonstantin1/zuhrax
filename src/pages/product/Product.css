@@ -1,6 +1,5 @@
-
 #prodetails{
-    background-image: url(../../../public/herobg.jpg);
+    background-image: url();
 }
 
 #prodetails .single-pro-image{
@@ -36,4 +35,8 @@
 
 #prodetails .single-pro-details span {
     line-height: 25px;
+}
+
+.green{
+    color: rgb(208, 220, 219);
 }

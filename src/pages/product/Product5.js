@@ -3,8 +3,9 @@ import "./Product.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Product5 = () => {
+  const { t } = useTranslation(["products"]);
   return (
     <>
     <Navbar/>
@@ -13,17 +14,17 @@ const Product5 = () => {
           <img src={IMAGES.img5} className=".single-pro-image"  style={{ width: '50%', margin: '0 28%', borderRadius: '20px'}}/>
         </div>
         <div className="single-pro-details">
-          <h3>MEK DENATURANT (mixture)</h3>
-          <h4 className="h4-single">Synonyms:</h4>
-          <ul className="h4-single"><li>German MEK</li> <li>M62</li></ul>
-          <h4 className="h4-single">Appearance:</h4>
-          <ul className="h4-single"><li>colorless liquid</li></ul>
-          <h4 className="h4-single">Packaging:</h4>
-          <ul className="h4-single"><li>drums</li> <li>IBC's</li> <li>bulk</li></ul>
-          <h4 className="h4-single">Main characteristics:</h4>
-          <ul className="h4-single">
-            <li>denaturing agent</li>
-            <li>ketone mixture employed in procedure for complete denaturing of ethanol in EU Member Statess</li>
+          <h3>{t("p5h3")}</h3>
+          <h4 className="h4-single">{t("p5h31")}</h4>
+          <ul className="uls"><li>{t("p5ul1")}</li> <li>{t("p5ul2")}</li></ul>
+          <h4 className="h4-single">{t("p5h32")}</h4>
+          <ul className="uls"><li>{t("p5ul3")}</li></ul>
+          <h4 className="h4-single">{t("p5h33")}</h4>
+          <ul className="uls"><li>{t("p3ul6")}</li> <li>{t("p3ul7")}</li> <li>{t("p3ul8")}</li></ul>
+          <h4 className="h4-single">{t("p3h37")}</h4>
+          <ul className="uls">
+            <li>{t("p5h44")}</li>
+            <li>{t("p5h45")}</li>
           </ul>
          
         </div>

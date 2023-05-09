@@ -3,8 +3,9 @@ import "./UsesStyles.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Uses3 = () => {
+  const { t } = useTranslation(["uses"])
   return (
     <>
       <Navbar />
@@ -17,12 +18,17 @@ const Uses3 = () => {
           />
         </div>
         <div className="single-pro-details">
-          <h3>The following products can be used as SOLVENTS</h3>
-          <span>
-            Ethyle Acetate<br/> Isopropanol (industrial/cosmetic/pharma grade)<br/>
-            Diethyl Phthalate<br/> Methyl Ethyl Ketone<br/> Isobutanol<br/> Diethyl Ether
-          </span>
-          
+          <h3>{t("u3h3")}</h3>
+          <p style={{ color: "white", paddingTop: '10px' }}>
+            <ul className="uls">
+              <li>{t("u3ul1")}</li>
+              <li>{t("u3ul2")}</li>
+              <li>{t("u3ul3")}</li>
+              <li>{t("u3ul4")}</li>
+              <li>{t("u3ul5")}</li>
+              <li>{t("u3ul6")}</li>
+            </ul> 
+          </p>
         </div>
       </section>
       <Footer />

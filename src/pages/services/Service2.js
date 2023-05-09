@@ -17,13 +17,13 @@ const Service2 = () => {
           />
         </div>
         <div className="single-pro-details">
-          <h3>Blending</h3>
-          <span>
+          <h2>Blending</h2>
+          <p style={{ color: "white", paddingTop: '10px' }}>
           Some applications require to mix two or more components following very specific technical procedures and/or proportions.<br/>
           We perform such customised blending.<br/>
           The blends run from a few liters up to bulk volumes.<br/>
-          </span>
-          <h4 className="h4-single">Don’t hesitate to contact us.</h4>
+          </p>
+          <h3 className="h4-single">Don’t hesitate to contact us.</h3>
         </div>
       </section>
       <Footer />

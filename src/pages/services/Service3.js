@@ -3,8 +3,9 @@ import "./Service.css";
 import Navbar from "../../components/navbar/NavBar";
 import Footer from "../../components/footer/Footer";
 import IMAGES from "../../assets";
-
+import { useTranslation } from "react-i18next";
 const Service3 = () => {
+  const { t } = useTranslation(["services"])
   return (
     <>
       <Navbar />
@@ -17,13 +18,11 @@ const Service3 = () => {
           />
         </div>
         <div className="single-pro-details">
-          <h3>Technical advice</h3>
-          <span>
-          Throughout the years, we have developed a sound expertise on the market for aversive bittering and denaturing agents.<br/>
-          Our offers always come along with technical advices and we are pleased to provide our customers with updated legal and technical information.<br/>
-          Whenever needed or on request, we can perform tests or prepare samples in our own in-house laboratory.<br/>
-          </span>
-          <h4 className="h4-single">Don’t hesitate to contact us.</h4>
+          <h3>{t("s3h3")}</h3>
+          <p style={{ color: "white", paddingTop: '10px' }}>
+          {t("s3p1")}
+          </p>
+          <h4 className="h4-single">{t("scont")}</h4>
         </div>
       </section>
       <Footer />
