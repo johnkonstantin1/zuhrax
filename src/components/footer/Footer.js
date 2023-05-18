@@ -53,7 +53,7 @@
 // //                         <h3>Contact us</h3>
 // //                         <input type="email" placeholder='Enter your email' />
 // //                         <FiMail className='mail-icon' />
-                        
+
 // //                     </form>
 // //                 </div>
 // //             </div>
@@ -155,33 +155,38 @@
 
 // export default Footer;
 
-
-import React, { useState } from 'react';
-import { SiDatabricks } from 'react-icons/si';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
-import { FiMail } from 'react-icons/fi';
-import './Footer.css';
-import { Link } from 'react-scroll';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import { SiDatabricks } from "react-icons/si";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
+import "./Footer.css";
+import { Link } from "react-scroll";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_EMAILJS_SERVICE_ID', 'YOUR_EMAILJS_TEMPLATE_ID', e.target, 'YOUR_EMAILJS_USER_ID')
+    emailjs
+      .sendForm(
+        "service_ve8te89",
+        "template_4ay4sfd",
+        e.target,
+        "CjgFMApitfOdFTLSa"
+      )
       .then((response) => {
-        console.log('Email successfully sent!', response);
+        console.log("Email successfully sent!", response);
       })
       .catch((error) => {
-        console.error('Error sending email:', error);
+        console.error("Error sending email:", error);
       });
 
     e.target.reset();
-    setEmail('');
-    setMessage('');
+    setEmail("");
+    setMessage("");
   };
 
   const handleEmailChange = (e) => {
@@ -193,15 +198,21 @@ const Footer = () => {
   };
 
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="container">
         <div className="top">
           <div className="logo-footer">
-            <SiDatabricks className='icon' />
+            <SiDatabricks className="icon" />
             <h2>Denatech</h2>
           </div>
-          <Link activeClass="active" to="top" spy={true} smooth={true} duration={500}>
-            <BsFillArrowUpCircleFill className='icon' />
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <BsFillArrowUpCircleFill className="icon" />
           </Link>
         </div>
         <div className="contact-container">
@@ -209,10 +220,17 @@ const Footer = () => {
             <h3>Contact us</h3>
             <div className="input-group">
               {/* <FiMail className='mail-icon' /> */}
-              <input type="email" placeholder='Enter your email' name="email" value={email} onChange={handleEmailChange} required />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                value={email}
+                onChange={handleEmailChange}
+                required
+              />
             </div>
             <textarea
-              placeholder='Enter your message'
+              placeholder="Enter your message"
               name="message"
               value={message}
               onChange={handleMessageChange}
