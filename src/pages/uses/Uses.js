@@ -72,7 +72,6 @@ const Uses = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

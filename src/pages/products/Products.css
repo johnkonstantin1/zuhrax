@@ -1,19 +1,17 @@
-/* .product1{
-
+/* .product1 {
     text-align: center;
     background: url('../../../public/bg.jpeg');
     padding-top: 5%;
-}
-
-.product1 .pro-container{
+  }
+  
+  .product1 .pro-container {
     display: flex;
     justify-content: space-between;
-
-    padding: 10px 20px; 
+    padding: 10px 20px;
     flex-wrap: wrap;
-}
-
-.product1 .pro{
+  }
+  
+  .product1 .pro {
     width: 23%;
     min-width: 250px;
     padding: 20px 20px;
@@ -26,57 +24,50 @@
     position: relative;
     left: auto;
     right: auto;
-}
-
-
-.product1 .pro:hover{
+  }
+  
+  .product1 .pro:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-
-}
-
-
-.product1 .pro .product-image {
+  }
+  
+  .product1 .pro .product-image {
     width: 100%;
     max-width: 200px;
     min-height: 150px;
     max-height: 150px;
     height: auto;
     border-radius: 20px;
-
-
-}
-
-.product1 .pro .des{
+  }
+  
+  .product1 .pro .des {
     text-align: start;
     padding: 10px 0;
-}
-
-.product1 .pro .des{
+  }
+  
+  .product1 .pro .des {
     color: #606063;
     font-size: 12px;
-}
-
-.product1 .pro .des .h5-pr{
+  }
+  
+  .product1 .pro .des .h5-pr {
     padding-top: 7px;
     color: #b8b0b0;
     font-size: 14px;
-}
-
-.product1 .pro .des i{
+  }
+  
+  .product1 .pro .des i {
     font-size: 12px;
     color: rgb(243, 181, 25);
-}
-
-.product1 .pro .des .h4-pr{
+  }
+  
+  .product1 .pro .des .h4-pr {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
     color: #088178;
-
-}
-
-
-.product1 .pro .des .cart{
+  }
+  
+  .product1 .pro .des .cart {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -88,4 +79,163 @@
     position: absolute;
     bottom: 20px;
     right: 10px;
-} */
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .product1 .pro {
+      width: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .product1 .pro {
+      width: 45%;
+
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .product1 .pro {
+      width: 100%;
+      
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .product1 .pro {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+   */
+
+   .product1 {
+    text-align: center;
+    background: url('../../../public/bg.jpeg');
+    padding-top: 5%;
+  }
+  
+  .product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 20px 20px;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+  
+  .product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+  
+  .product1 .pro .product-image {
+    width: 100%;
+    max-width: 200px;
+    min-height: 150px;
+    max-height: 150px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+  }
+  
+  .product1 .pro .des {
+    color: #606063;
+    font-size: 12px;
+  }
+  
+  .product1 .pro .des .h5-pr {
+    padding-top: 7px;
+    color: #b8b0b0;
+    font-size: 14px;
+  }
+  
+  .product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+  }
+  
+  .product1 .pro .des .h4-pr {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+  }
+  
+  .product1 .pro .des .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .product1 .pro {
+      width: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .product1 .pro {
+      width: 45%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .product1 .pro {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .product1 .pro {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+  
+  @media only screen and (max-width: 780px) {
+    .product1 {
+      position: relative;
+      top: 20px;
+    }
+    .product1 {
+      text-align: center;
+      background: url('../../../public/bg.jpeg');
+      padding-top: 5%;
+      margin-top: -20px; /* Добавляем отрицательный отступ сверху */
+    }
+    
+    .product1 .pro-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      margin-top: 20px; /* Компенсируем отрицательный отступ */
+    }
+    
+  }
+ 

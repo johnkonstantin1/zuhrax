@@ -29,6 +29,16 @@
     padding: 1rem;
 }
 
+.navbar .hamburger .icon-close {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 4rem; /* Add margin-top to move the icon below */
+    cursor: pointer; /* Add cursor pointer to make it clickable */
+
+}
+
+
+
 .navbar .nav-menu {
     height: 100%;
     align-items: center;
